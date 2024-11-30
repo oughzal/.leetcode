@@ -1,0 +1,8 @@
+algorithme nom
+    var
+        nb : réel
+début
+    ecrire("Donner nb : ")
+    lire(nb)
+    ecrire(nb)
+fin
