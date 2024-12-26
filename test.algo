@@ -1,8 +1,12 @@
-algorithme nom
-    var
-        nb : réel
-début
-    ecrire("Donner nb : ")
-    lire(nb)
-    ecrire(nb)
-fin
+si conditon1 alors
+     // bloc à exécuter si condition 1 est vraie
+sinonsi condition2 alors
+    // bloc à exécuter si condition 2 est vraie
+...
+sinonsi conditionN alors
+    // bloc à exécuter si condition N est vraie
+sinon
+    // bloc à exécuter aucune condition est vraie
+FinSi
+
+            

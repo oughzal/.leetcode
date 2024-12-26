@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: auto;
+    
+}
+#code{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+.cell{
+    display: inline-block;
+    position: relative;
+}
+.cell div:first-child{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #eee;
+    margin: 1px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.cell div:nth-child(2){
+    
+    font-size: 0.8em;
+    position: absolute;
+    top: 3px;
+    left:4px;
+}
+
+.active::after{
+    content: 'i';
+    position: absolute;
+    color: black;
+    bottom: -7;
+}
+
+
+.cell div:first-child:hover{
+    background-color: rgb(21, 141, 2);
+    cursor: pointer;
+
+}
+.cell div:first-child:hover>:not(:hover) {
+    background-color: rgb(138, 137, 139);
+    opacity: 0.1;
+
+}
